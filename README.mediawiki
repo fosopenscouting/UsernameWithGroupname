@@ -1,0 +1,17 @@
+==Mediawiki Extension:UsernameWithGroupname==
+Allows the user to provide a group at sign up, the group name will be displayed after the username and has to be given at login through a dropdown.
+
+===Installation===
+* Create a folder in the folder 'extensions' named UsernameWithGroupname
+* Add the following line to your LocalSettings.php file
+<code>require_once( "$IP/extensions/extension_name/extension_name.php" );</code>
+
+===Configuration===
+Under require_once line you can use the following variables to alter the behaviour of the extension:
+* $wgUsergroups: An array of groups that will be shown in the dropdownlist in the login and sign up forms.
+* $wgCharsBetweenUsernameAndGroupname: The string that will be added between the username and the groupname (Default: " (").
+* $wgCharsAfterGroupname: The string that will be added after the groupname (Default: ")").
+
+===Contributors===
+
+* [http://www.thomascrepain.be/ Thomas Crepain
